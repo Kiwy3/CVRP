@@ -12,7 +12,10 @@ To define the problem, we can use the following mathematical model :
 * $C_{ij}$ : distance between point i and point j (client or depot)
 * $Q_i$ : weight of the point
 ### Variable
-$x_{ijk}$ is the binary variable, with a value of 1 if there is an vehicule driving from i to j in vehicule k, the objectif is to minimize $\sum_i \sum_j \sum_k C_{ijk}.x{ijk}$
+$x_{ijk}$ is the binary variable, with a value of 1 if there is an vehicule driving from i to j in vehicule k, 0 else
+
+### Objective
+The objective is to minimize $\sum_i \sum_{j \neq i} \sum_k C_{ijk}.x{ijk}$
 ### Constraints
 * $\sum_i x_{ijk} = \sum_i x_{jik} \forall j \in {1,..,n},\forall k \in {1,..,p}$ : Vehicle leaves node that it enters
 * $\sum_k \sum_i x_{ijk} = 1 \forall j \in {2,..,n}$ : Ensure that every node is entered once
