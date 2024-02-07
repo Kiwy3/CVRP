@@ -61,11 +61,8 @@ The code can be located at SPLIT Heuristic.py .
 In this part, we can see the results of the heuristic. To compare, the optimal results of the CVRP problem with these instances are respectively 524,61 and 835, 26. 
 
 ## Instance representation
-Instance with 50 Clients : <br>
-<img src="images/Resume_50_1.png" alt="Resume of 50">
 
-Instance with 75 Clients : <br>
-<img src="images/Resume_75_1.png" alt="Resume of 75">
+<img src="images/Resume_50_1.png" alt="Resume of 50"> <img src="images/Resume_75_1.png" alt="Resume of 75">
 
 ## Tour representation
 We can show the representation of the best tour with 5000 iterations : <br>
