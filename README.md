@@ -27,7 +27,7 @@ This mathematic model can be used to have optimal solution, based on exact metho
 ## Heuristic Definition
 The Split heuristic is a Route First, Cluster second heuristic. It mean that we first generate a big tour, without capacities like a TSP problem, then we cluster it into the best subtour we can. 
 
-In our case, the Big Tour is done with the Nearest Neighbor heuristic and the Randomised Nearest Neighbors. When we have the big tour, the SPlit is done with this Pseudo-code :
+In our case, the Big Tour is done with the Nearest Neighbor heuristic and the Randomised Nearest Neighbors. When we have the big tour, the SPlit is done with this Pseudo-code (in french) :
 
 >Initialiser les 𝑉𝑖 à plus l'infini, sauf 𝑉0 = 0 (labels provisoires) <br>
 >Pour 𝑖 variant de 1 à 𝑛 <br>
@@ -54,11 +54,28 @@ This pseudo can be used with these notations :
 * Vi is the lowest cost possible to go to the client i
 * Pi is the predecessor of the client i (used to generate the subtour)
 
-The code can be located at XXXXXXXXXXXXXXXX. 
+The code can be located at SPLIT Heuristic.py .
 
 # Results 
 
+In this part, we can see the results of the heuristic. To compare, the optimal results of the CVRP problem with these instances are respectively 524,61 and 835, 26. 
 
+## Instance representation
+Instance with 50 Clients : <br>
+<img src="images/Resume_50_1.png" alt="Resume of 50">
+
+Instance with 75 Clients : <br>
+<img src="images/Resume_75_1.png" alt="Resume of 75">
+
+## Tour representation
+We can show the representation of the best tour with 5000 iterations : <br>
+<img src="images/Whole_SPLIT_50_1.png" alt="Tour with 50">
+<img src="images/Whole_SPLIT_75_1.png" alt="Tour with 75">
+
+## Performance by iterations
+What's interesting with the randomized nearest neighbors is that we can look at the result by iterations : 
+<img src="images/Results_50_1.png" alt="Results with 50">
+<img src="images/Results_75_1.png" alt="Results with 75">
 
 
 
